@@ -128,6 +128,6 @@ return [
 	|
 	*/
 
-	'path.sys' => '../vendor/lenevor/syscode',
+	'path.sys' => '../vendor/lenevor/syscodes',
 
 ];
