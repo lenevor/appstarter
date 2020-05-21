@@ -12,7 +12,7 @@ define('LENEVOR_START', microtime(true));
 |
 */
 
-require __DIR__.'/../vendor/lenevor/syscodes/requeriments.php';
+require __DIR__.'/../vendor/lenevor/syscodes/src/requeriments.php';
 
 /*
 |---------------------------------------------------------------------------
@@ -23,7 +23,7 @@ require __DIR__.'/../vendor/lenevor/syscodes/requeriments.php';
 |
 */
 
-require __DIR__.'/../vendor/lenevor/syscodes/bootstrap.php';
+require __DIR__.'/../vendor/lenevor/syscodes/src/bootstrap.php';
 
 // Create the application
 $app = new Syscodes\Core\Application(
