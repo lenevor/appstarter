@@ -18,7 +18,7 @@
 	],
 	"require": {
 		"php": "^7.3",
-		"lenevor/syscodes": "^0.7.0"
+		"lenevor/syscodes": "^0.7.2"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
