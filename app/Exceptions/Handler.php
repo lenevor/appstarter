@@ -35,6 +35,15 @@ use Syscodes\Core\Exceptions\Handler as ExceptionHandler;
  */
 class Handler extends ExceptionHandler 
 {
+     /**
+     * A list of the exception types that should not be reported.
+     * 
+     * @var array $dontReport
+     */
+    protected $dontReport = [
+        //
+    ];
+
     /**
      * Report or log an exception.
      * 
@@ -50,7 +59,7 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception into an HTTP response.
      * 
-     * @param  \Syscodes\Http\Request  $request
+     * @param  \Syscode\Http\Request  $request
      * @param  \Exception  $exception
      * 
      * @return \Syscodes\Http\Response
