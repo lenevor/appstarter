@@ -17,7 +17,7 @@
  * @subpackage  Base
  * @author      Javier Alexander Campo M. <jalexcam@gmail.com>
  * @link        https://lenevor.com 
- * @copyright   Copyright (c) 2019-2020 Lenevor Framework 
+ * @copyright   Copyright (c) 2019-2021 Lenevor Framework 
  * @license     https://lenevor.com/license or see /license.md or see https://opensource.org/licenses/BSD-3-Clause New BSD license
  * @since       0.7.3
  */
@@ -53,7 +53,7 @@ if (is_file(__DIR__.'/../vendor/autoload.php'))
 |
 */
 
-require __DIR__.'/../vendor/lenevor/syscodes/src/requeriments.php';
+require __DIR__.'/../syscodes/src/requeriments.php';
 
 /*
 |---------------------------------------------------------------------------
@@ -64,7 +64,7 @@ require __DIR__.'/../vendor/lenevor/syscodes/src/requeriments.php';
 |
 */
 
-require __DIR__.'/../vendor/lenevor/syscodes/src/bootstrap.php';
+require __DIR__.'/../syscodes/src/bootstrap.php';
 
 /*
 |------------------------------------------------------------------------
