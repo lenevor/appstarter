@@ -53,7 +53,7 @@ if (is_file(__DIR__.'/../vendor/autoload.php'))
 |
 */
 
-require __DIR__.'/../syscodes/src/requeriments.php';
+require __DIR__.'/../vendor/lenevor/syscodes/src/requeriments.php';
 
 /*
 |---------------------------------------------------------------------------
@@ -64,7 +64,7 @@ require __DIR__.'/../syscodes/src/requeriments.php';
 |
 */
 
-require __DIR__.'/../syscodes/src/bootstrap.php';
+require __DIR__.'/../vendor/lenevor/syscodes/src/bootstrap.php';
 
 /*
 |------------------------------------------------------------------------
