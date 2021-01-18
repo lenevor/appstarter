@@ -19,7 +19,7 @@
  * @subpackage  Base
  * @author      Javier Alexander Campo M. <jalexcam@gmail.com>
  * @link        https://lenevor.com 
- * @copyright   Copyright (c) 2019-2020 Lenevor Framework 
+ * @copyright   Copyright (c) 2019-2021 Lenevor Framework 
  * @license     https://lenevor.com/license or see /license.md or see https://opensource.org/licenses/BSD-3-Clause New BSD license
  * @since       0.7.3
  */
@@ -64,6 +64,17 @@ chdir('public');
 
 /*
 |------------------------------------------------------------------------
+| Call Configured Paths
+|------------------------------------------------------------------------
+|
+| Calls all the pathname of settings for manages an application web.
+|
+*/
+
+$paths = require __DIR__.'/config/paths.php';
+
+/*
+|------------------------------------------------------------------------
 | Check Plataform Requeriments
 |------------------------------------------------------------------------
 |
@@ -72,7 +83,7 @@ chdir('public');
 |
 */
 
-require __DIR__.'/vendor/lenevor/syscodes/src/requeriments.php';
+require $paths['path.sys'].'/src/requeriments.php';
 
 /*
 |------------------------------------------------------------------------
@@ -83,7 +94,7 @@ require __DIR__.'/vendor/lenevor/syscodes/src/requeriments.php';
 |
 */
 
-require __DIR__.'/vendor/lenevor/syscodes/src/bootstrap.php';
+require $paths['path.sys'].'/src/bootstrap.php';
 
 /*
 |------------------------------------------------------------------------
@@ -95,7 +106,7 @@ require __DIR__.'/vendor/lenevor/syscodes/src/bootstrap.php';
 |
 */
 
-$app = require_once __DIR__.'/bootstrap/app.php';
+$app = require_once $paths['path.bootstrap'].'/app.php';
 
 /*
 |------------------------------------------------------------------------
