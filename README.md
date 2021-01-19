@@ -1,11 +1,11 @@
 <p align="center"><a href="https://lenevor.com" target="_blank"><img src="https://avatars2.githubusercontent.com/u/50193329?s=200&v=4" title="Lenevor logo" height="100" width="100"></a></p>
 
 <p align="center">
-    <a href="https://scrutinizer-ci.com/g/lenevor/syscodes"><img src="https://scrutinizer-ci.com/g/lenevor/syscodes/badges/build.png" title="Buid status"></a>
-    <a href="https://packagist.org/packages/lenevor/appstarter"><img src="https://poser.pugx.org/lenevor/appstarter/d/total.svg" title="Total Downloads"></a>
-    <a href="https://packagist.org/packages/lenevor/appstarter"><img src="https://poser.pugx.org/lenevor/appstarter/v/stable.svg" title="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/lenevor/appstarter"><img src="https://img.shields.io/packagist/php-v/lenevor/appstarter?color=green" title="PHP Version Support"></a>
-    <a href="https://packagist.org/packages/lenevor/appstarter"><img src="https://poser.pugx.org/lenevor/appstarter/license.svg" title="Licence"></a>
+    <a href="https://scrutinizer-ci.com/g/lenevor/syscodes"><img src="https://scrutinizer-ci.com/g/lenevor/syscodes/badges/build.png" title="Build status"></a>
+    <a href="https://packagist.org/packages/lenevor/lenevor"><img src="https://img.shields.io/packagist/dt/lenevor/appstarter?color=gr" title="Total Downloads"></a>
+    <a href="https://packagist.org/packages/lenevor/lenevor"><img src="https://img.shields.io/packagist/v/lenevor/appstarter?color=blue" title="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/lenevor/lenevor"><img src="https://img.shields.io/packagist/php-v/lenevor/appstarter" title="PHP Version Support"></a>
+    <a href="https://packagist.org/packages/lenevor/lenevor"><img src="https://img.shields.io/packagist/l/lenevor/appstarter" title="Licence"></a>
 </p>
 
 ## About Lenevor
