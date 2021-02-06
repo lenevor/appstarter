@@ -20,7 +20,8 @@ Lenevor it strives to stay simple, by focusing on the basics, such as:
 - Connection with the database using Query Builder.
 - Multiple back-ends for session and cache storage.
 - Real-time event broadcasting.
-- Lenevor is accessible, powerful, and provides tools required for large, robust applications.
+
+Lenevor is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Security Vulnerabilities
 
