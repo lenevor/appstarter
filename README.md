@@ -1,7 +1,7 @@
 <p align="center"><a href="https://lenevor.com" target="_blank"><img src="https://avatars2.githubusercontent.com/u/50193329?s=200&v=4" title="Lenevor logo" height="100" width="100"></a></p>
 
 <p align="center">
-    <a href="https://travis-ci.org/lenevor/syscodes"><img src="https://travis-ci.org/lenevor/syscodes.svg?branch=0.7.0" title="Build status"></a>
+    <a href="https://travis-ci.org/lenevor/syscodes"><img src="https://travis-ci.org/lenevor/syscodes.svg" title="Build status"></a>
     <a href="https://packagist.org/packages/lenevor/syscodes"><img src="https://img.shields.io/packagist/dt/lenevor/syscodes?color=gr" title="Total Downloads"></a>
     <a href="https://packagist.org/packages/lenevor/syscodes"><img src="https://img.shields.io/packagist/v/lenevor/syscodes?color=blue" title="Latest Stable Version"></a>
     <a href="https://packagist.org/packages/lenevor/syscodes"><img src="https://img.shields.io/packagist/php-v/lenevor/syscodes" title="PHP Version Support"></a>
