@@ -1,6 +1,6 @@
 <@extends('layouts.app')
 
-<@section('title', 'Welcome to '.config('app.name'))
+<@section('title', __('view.welcomeTo').config('app.name'))
 
 <@section('content')
 <div class="wrapper">
