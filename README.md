@@ -3,7 +3,7 @@
 <p align="center">
     <a href="https://scrutinizer-ci.com/g/lenevor/syscodes"><img src="https://scrutinizer-ci.com/g/lenevor/syscodes/badges/build.png" title="Build status"></a>
     <a href="https://packagist.org/packages/lenevor/syscodes"><img src="https://img.shields.io/packagist/dt/lenevor/syscodes?color=gr" title="Total Downloads"></a>
-    <a href="https://packagist.org/packages/lenevor/syscodes"><img src="https://img.shields.io/packagist/v/lenevor/syscodes?color=blue" title="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/lenevor/syscodes"><img src="https://img.shields.io/github/v/tag/lenevor/syscodes?label=release" title="Latest Stable Version"></a>
     <a href="https://packagist.org/packages/lenevor/syscodes"><img src="https://img.shields.io/packagist/l/lenevor/syscodes" title="Licence"></a>
 </p>
 
@@ -15,10 +15,10 @@ Lenevor it strives to stay simple, by focusing on the basics, such as:
 
 - A simple, fast routing engine.
 - Powerful dependency injection container.
-- Separation between the bussines logic and presentation through the Plaze template engine.
 - Connection with the database using Query Builder.
 - Multiple back-ends for session and cache storage.
 - Real-time event broadcasting.
+- Separation between the bussines logic and presentation through the Plaze template engine.
 
 Lenevor is accessible, powerful, and provides tools required for large, robust applications.
 
