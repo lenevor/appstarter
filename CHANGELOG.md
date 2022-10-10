@@ -1,5 +1,32 @@
 # Release Notes
 
+## [Version 0.8.0-alpha.8] 
+
+Release Date: Oct 10, 2022
+
+**Next alpha release of Lenevor**
+
+### Added
+
+### Fixed
+
+### Changed
+- Changed is the MiddlewareResolver class to the Resolver folder
+
+### Created
+- Created new trait for returns the HTTP requests
+- Changed is the `RouteResolver` class to the Resolver folder
+- Changed is the `AwaitingResourceRegistration` class to the Resources folder
+- Changed is the `ResourceRegister` class to the Resources folder
+- Changed is the `RouteFileRegister` class to the Resources folder
+- Changed is the `RouteRegister` class to the Resources folder
+- Changed is the `Pipeline` class to the Supported folder
+
+### Removed
+
+### Updated
+
+
 ## [Version 0.7.10-alpha.7] 
 
 Release Date: Jul 06, 2022
