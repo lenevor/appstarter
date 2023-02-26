@@ -1,4 +1,4 @@
-<p align="center"><a href="https://lenevor.com" target="_blank"><img src="https://avatars2.githubusercontent.com/u/50193329?s=200&v=4" title="Lenevor logo" height="100" width="100"></a></p>
+<p align="center"><a href="https://lenevor.com" target="_blank"><img src="https://raw.githubusercontent.com/lenevor/art/master/logo-types/PNG/Logo/Logotype.png" title="Lenevor logo" height="130" width="430"></a></p>
 
 <p align="center">
     <a href="https://scrutinizer-ci.com/g/lenevor/syscodes"><img src="https://scrutinizer-ci.com/g/lenevor/syscodes/badges/build.png" title="Build status"></a>
