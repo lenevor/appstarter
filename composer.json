@@ -15,11 +15,9 @@
 		}
 	],
 	"require": {
-		"php": "^8.0.2",
-		"lenevor/syscodes": "^0.8.9"
+		"php": "^8.1",
+		"lenevor/syscodes": "^0.8.10"
 	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
 	"scripts": {
 		"post-create-project-cmd": [
 			"@php -r \"file_exists('.env') || copy('.env.dist', '.env');\""
@@ -27,5 +25,7 @@
 		"post-update-cmd": [
 			"@php -r \"file_exists('.env') || copy('.env.dist', '.env');\""
 		]
-	}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }
