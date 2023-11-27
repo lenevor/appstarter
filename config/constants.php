@@ -12,7 +12,6 @@
 
 defined('COMPOSER_PATH') OR define('COMPOSER_PATH', dirname(__DIR__).'/vendor/autoload.php');
 
-
 /*
 |----------------------------------------------------------------------------
 | File and Directory Modes
