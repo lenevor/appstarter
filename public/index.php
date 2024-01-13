@@ -15,7 +15,7 @@
  *
  * @package     Lenevor
  * @link        https://lenevor.com
- * @copyright   Copyright (c) 2019 - 2022 Alexander Campo <jalexcam@gmail.com>
+ * @copyright   Copyright (c) 2019 - 2024 Alexander Campo <jalexcam@gmail.com>
  * @license     https://opensource.org/licenses/BSD-3-Clause New BSD license or see https://lenevor.com/license or see /license.md
  */
 
@@ -23,22 +23,6 @@ use Syscodes\Components\Http\Request;
 use Syscodes\Components\Contracts\Http\Lenevor;
 
 define('LENEVOR_START', microtime(true));
-
-/*
-|------------------------------------------------------------------------
-| Register The Composer Autoloader
-|------------------------------------------------------------------------
-|
-| Composer provides a convenient, automatically generated class loader 
-| for our application. We will need it so that we do not have to worry 
-| about loading any class of third party "manually".
-|
-*/
-
-if (file_exists(__DIR__.'/../vendor/autoload.php'))
-{
-    require __DIR__.'/../vendor/autoload.php';
-}
 
 /*
 |------------------------------------------------------------------------
@@ -96,4 +80,4 @@ $response = take($lenevor->handle(
     $request = Request::capture()
 ))->send(true); // Sends HTTP headers and contents
 
-$lenevor->shutdown($request, $response);
+$lenevor->finalize($request, $response);

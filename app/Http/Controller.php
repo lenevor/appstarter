@@ -15,20 +15,19 @@
  *
  * @package     Lenevor
  * @link        https://lenevor.com
- * @copyright   Copyright (c) 2019 - 2022 Alexander Campo <jalexcam@gmail.com>
+ * @copyright   Copyright (c) 2019 - 2024 Alexander Campo <jalexcam@gmail.com>
  * @license     https://opensource.org/licenses/BSD-3-Clause New BSD license or see https://lenevor.com/license or see /license.md
  */
 
 namespace App\Http;
 
-use Syscodes\Components\Controller\Controller as BaseController;
+use Syscodes\Components\Core\Auth\Access\AuthorizesRequests;
+use Syscodes\Components\Routing\Controller as BaseController;
 
 /**
  * Base Controller for the applications.
- * 
- * @author Alexander Campo <jalexcam@gmail.com>
  */
 class Controller extends BaseController
 {
-	//
+	use AuthorizesRequests;
 }

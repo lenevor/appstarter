@@ -15,7 +15,7 @@
  *
  * @package     Lenevor
  * @link        https://lenevor.com
- * @copyright   Copyright (c) 2019 - 2022 Alexander Campo <jalexcam@gmail.com>
+ * @copyright   Copyright (c) 2019 - 2024 Alexander Campo <jalexcam@gmail.com>
  * @license     https://opensource.org/licenses/BSD-3-Clause New BSD license or see https://lenevor.com/license or see /license.md
  */
 
@@ -25,8 +25,6 @@ use Syscodes\Components\Core\Console\Lenevor as ConsoleLenevor;
 
 /**
  * Load the console to call arguments and commands.
- * 
- * @author Alexander Campo <jalexcam@gmail.com>
  */
 class Lenevor extends ConsoleLenevor
 {

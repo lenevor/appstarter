@@ -19,35 +19,21 @@
  * @license     https://opensource.org/licenses/BSD-3-Clause New BSD license or see https://lenevor.com/license or see /license.md
  */
 
-namespace App\Exceptions;
+namespace App\Http\Middleware;
 
-use Throwable;
-use Syscodes\Components\Core\Exceptions\Handler as ExceptionHandler;
+use Syscodes\Components\Core\Http\Middleware\VerifyCsrfToken as Middleware;
 
 /**
- * Class is where all exceptions triggered by your application are logged 
- * and then rendered back to the user.
+ * Checks if exists a the CSRF token in the cookie.
  */
-class Handler extends ExceptionHandler 
+class VerifyCsrfToken extends Middleware
 {
-     /**
-     * A list of the exception types that should not be reported.
+    /**
+     * The names of the cookies that should not be encrypted.
      * 
-     * @var array $dontReport
+     * @var array $except
      */
-    protected $dontReport = [
+    protected $except = [
         //
     ];
-
-    /**
-     * Register the exception handling with callbacks for the application.
-     * 
-     * @return void
-     */
-    public function register()
-    {
-        $this->reportable(function (Throwable $e) {
-            //
-        });
-    }
 }

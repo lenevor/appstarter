@@ -15,7 +15,7 @@
  *
  * @package     Lenevor
  * @link        https://lenevor.com
- * @copyright   Copyright (c) 2019 - 2022 Alexander Campo <jalexcam@gmail.com>
+ * @copyright   Copyright (c) 2019 - 2024 Alexander Campo <jalexcam@gmail.com>
  * @license     https://opensource.org/licenses/BSD-3-Clause New BSD license or see https://lenevor.com/license or see /license.md
  */
 
@@ -25,8 +25,6 @@ use Syscodes\Components\Core\Http\Lenevor as HttpLenevor;
 
 /**
  * Core Framework.
- * 
- * @author Alexander Campo <jalexcam@gmail.com>
  */
 class Lenevor extends HttpLenevor
 {
@@ -36,7 +34,7 @@ class Lenevor extends HttpLenevor
      * @var array $middleware
      */
     protected $middleware = [
-        //
+        \Syscodes\Components\Core\Http\Middleware\VerifyPostSize::class,
     ];
 
     /**
@@ -48,6 +46,8 @@ class Lenevor extends HttpLenevor
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
             \Syscodes\Components\Cookie\Middleware\AddQueuedCookiesResponse::class,
+            \Syscodes\Components\Session\Middleware\StartSession::class,
+            \App\Http\Middleware\VerifyCsrfToken::class,
         ],
 
         'api' => [
@@ -61,6 +61,8 @@ class Lenevor extends HttpLenevor
      * @var array $routeMiddleware
      */
     protected $routeMiddleware = [
-        //
+        'auth' => \App\Http\Middleware\Authenticate::class,
+        'auth.basic' => \Syscodes\Components\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
     ];
 }

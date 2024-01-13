@@ -19,35 +19,26 @@
  * @license     https://opensource.org/licenses/BSD-3-Clause New BSD license or see https://lenevor.com/license or see /license.md
  */
 
-namespace App\Exceptions;
+namespace App\Http\Middleware;
 
-use Throwable;
-use Syscodes\Components\Core\Exceptions\Handler as ExceptionHandler;
+use Syscodes\Components\Auth\Middleware\Authenticate as Middleware;
 
 /**
- * Class is where all exceptions triggered by your application are logged 
- * and then rendered back to the user.
+ * Determine if the user is logged using redirected.
  */
-class Handler extends ExceptionHandler 
+class Authenticate extends Middleware
 {
-     /**
-     * A list of the exception types that should not be reported.
-     * 
-     * @var array $dontReport
-     */
-    protected $dontReport = [
-        //
-    ];
-
     /**
-     * Register the exception handling with callbacks for the application.
+     * Get the path the user should be redirected to when they are not authenticated.
      * 
-     * @return void
+     * @param  \Syscodes\Components\Http\Request  $request
+     * 
+     * @return string|null
      */
-    public function register()
+    protected function redirectTo($request)
     {
-        $this->reportable(function (Throwable $e) {
-            //
-        });
+        if ( ! $request->expectsJson()) {
+            return redirect()->route('login');
+        }
     }
 }

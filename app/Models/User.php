@@ -15,20 +15,18 @@
  *
  * @package     Lenevor
  * @link        https://lenevor.com
- * @copyright   Copyright (c) 2019 - 2022 Alexander Campo <jalexcam@gmail.com>
+ * @copyright   Copyright (c) 2019 - 2024 Alexander Campo <jalexcam@gmail.com>
  * @license     https://opensource.org/licenses/BSD-3-Clause New BSD license or see https://lenevor.com/license or see /license.md
  */
 
 namespace App\Models;
 
-use Syscodes\Components\Database\Erostrine\Model;
+use Syscodes\Components\Core\Auth\User as Authentication;
 
 /**
  * Called the User model when connection to database.
- * 
- * @author Alexander Campo <jalexcam@gmail.com>
  */
-class User extends Model
+class User extends Authentication
 {
     /**
      * The attributes that are mass assignable.
