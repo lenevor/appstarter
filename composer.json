@@ -20,10 +20,10 @@
 	},
 	"scripts": {
 		"post-create-project-cmd": [
-			"@php -r \"file_exists('.env') || copy('.env.dist', '.env');\""
+			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
 		],
 		"post-update-cmd": [
-			"@php -r \"file_exists('.env') || copy('.env.dist', '.env');\""
+			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
 		]
 	},
 	"minimum-stability": "dev",
