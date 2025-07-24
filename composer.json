@@ -23,7 +23,7 @@
 			"@php -r \"file_exists('.env') || copy('.env.dist', '.env');\""
 		],
 		"post-update-cmd": [
-			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+			"@php -r \"file_exists('.env') || copy('.env.dist', '.env');\""
 		]
 	},
 	"minimum-stability": "dev",
