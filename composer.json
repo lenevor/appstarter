@@ -1,11 +1,12 @@
 {
-	"name": "lenevor/appstarter",
+	"name": "lenevor/lenevor",
 	"type": "project",
 	"description": "The Lenevor Framework.",
 	"keywords": ["syscodes","lenevor"],
 	"license": "BSD-3-Clause",
 	"homepage": "https://lenevor.com",
 	"support": {
+		"wiki": "https://github.com/lenevor/lenevor/wiki",
 		"source": "https://github.com/lenevor"
 	},
 	"authors": [
@@ -16,7 +17,9 @@
 	],
 	"require": {
 		"php": "^8.2",
-		"lenevor/syscodes": "^0.8.14"
+        "symfony/http-foundation": "^7.2.0",
+        "symfony/process": "^7.2.0",
+        "symfony/routing": "^7.2.0"
 	},
 	"scripts": {
 		"setup": [
@@ -25,9 +28,9 @@
             "@php prime key:generate"
         ],
 		"post-create-project-cmd": [
-			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+			"@php -r \"file_exists('.env') || copy('.env.exmple', '.env');\"",
 			"@php prime key:generate"
-		],
+		],		
 		"post-update-cmd": [
 			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
 			"@php prime key:generate"
