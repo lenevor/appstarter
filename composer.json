@@ -1,12 +1,11 @@
 {
-	"name": "lenevor/lenevor",
+	"name": "lenevor/appstarter",
 	"type": "project",
 	"description": "The Lenevor Framework.",
 	"keywords": ["syscodes","lenevor"],
 	"license": "BSD-3-Clause",
 	"homepage": "https://lenevor.com",
 	"support": {
-		"wiki": "https://github.com/lenevor/lenevor/wiki",
 		"source": "https://github.com/lenevor"
 	},
 	"authors": [
@@ -20,18 +19,11 @@
 		"lenevor/syscodes": "^0.8.14"
 	},
 	"scripts": {
-		"setup": [
-            "composer install",
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-            "@php prime key:generate"
-        ],
 		"post-create-project-cmd": [
-			"@php -r \"file_exists('.env') || copy('.env.exmple', '.env');\"",
-			"@php prime key:generate"
-		],		
+			"@php -r \"file_exists('.env') || copy('.env.dist', '.env');\""
+		],
 		"post-update-cmd": [
-			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-			"@php prime key:generate"
+			"@php -r \"file_exists('.env') || copy('.env.dist', '.env');\""
 		]
 	},
 	"minimum-stability": "dev",
